@@ -1,0 +1,32 @@
+{
+  "name": "03-api-solid",
+  "version": "1.0.0",
+  "description": "Gym pass style app.",
+  "main": "index.js",
+  "scripts": {
+    "start:dev":"tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diasisac/03-API-SOLID.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diasisac/03-API-SOLID/issues"
+  },
+  "homepage": "https://github.com/diasisac/03-API-SOLID#readme",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "tsup": "^6.7.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "fastify": "^4.17.0"
+  }
+}
