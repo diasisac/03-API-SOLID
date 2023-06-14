@@ -16,7 +16,7 @@ export class CheckInUse {
     async execute({ userId, gymId }: CheckInUseRequest): Promise<CheckInUseResponse> {
         const checkin = await this.checkinsRepository.create({
             user_id :userId,
-            gim_id: gymId
+            gym_id: gymId
         })
 
         return {
